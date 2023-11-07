@@ -72,17 +72,20 @@ function ortalamaBul(sayiDizi) {
 */
 
 function ortalamadanBuyukleriBul(sayilar, ortalamaHesapla) {
+  
   if(sayilar == "")
     return null;
   else if(sayilar.length == 1)
     return sayilar;
-  let ort = ortalamaHesapla(sayilar);
-  console.log(ort);
+
+  let ort = ortalamaHesapla(sayilar); 
   let sonuc = sayilar.filter(eleman => {
     return eleman > ort;
   });
+  
   return sonuc;
 } 
+ 
 /* !!!! Burdan aşağısını değiştirmeyin !!!! */
 function as() {
   console.log("Kodlar sorunsuz çalışıyor!");
